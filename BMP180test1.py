@@ -19,7 +19,7 @@ from BMP180 import BMP180
 
 bmp = BMP180()
 
-id_a = [47313852]
+id_a = [#Senders ID]
 
 
 def handle(msg):
@@ -29,7 +29,7 @@ def handle(msg):
 	print 'Got command: %s' % command
 	if sender in id_a:
 		if command == '/start':
-			if sender == 47313852:
+			if sender == #sender ID:
 				bot.sendMessage(chat_id, 'Ciao Riccardo!')
 			else:
 				bot.sendMessage(chat_id, 'Hei, ciao!')
